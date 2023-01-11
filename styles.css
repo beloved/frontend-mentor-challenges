@@ -1,0 +1,111 @@
+/* 
+
+Font
+Family: Montserrat
+Weights: 500, 700
+
+Family: Fraunces
+Weights: 700
+
+ */
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  line-height: 2;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-img {
+  width: 100%;
+  max-height: 577.5px;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: var(--white);
+  padding: 3em;
+  border-radius: 0 10px 10px 0;
+}
+
+.card-category {
+  color: var(--dark-grayish-blue);
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-family: "Fraunces", sans-serif;
+  font-size: 3em;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1em;
+}
+
+.sale-price {
+  font-family: "Fraunces", sans-serif;
+  color: var(--dark-cyan);
+  font-size: 2em;
+}
+
+.price {
+  text-decoration: line-through;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  padding: 1.5em 3em;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--very-dark-blue);
+}
