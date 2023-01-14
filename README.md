@@ -1,2 +1,2 @@
-# frontend-mentor-projects
+# Frontend Mentor Challenges
 A repository to organize frontendmentor.io projects
